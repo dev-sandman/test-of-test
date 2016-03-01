@@ -68,7 +68,7 @@ module.exports = grunt => {
   // ]);
 
   //tasks: test for type
-  grunt.registerTask('linter-test',[
+  grunt.registerTask('linter',[
     'jslint-test',
     'jshint-test',
     'jscs-test',
