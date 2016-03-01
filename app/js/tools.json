@@ -1,0 +1,193 @@
+{"tools":[
+  {
+    "name": "JSHint",
+    "command": "gulp jshint",
+    "tested": false,
+    "type": "linter"
+  },{
+    "name": "JSLint",
+    "command": "gulp jslint",
+    "tested": false,
+    "type": "linter"
+  },{
+    "name": "JSCS",
+    "command": "gulp jscs",
+    "tested": false,
+    "type": "linter"
+  },{
+    "name": "EsLint",
+    "command": "gulp eslint",
+    "tested": false,
+    "type": "linter"
+  },{
+    "name": "Jasmine",
+    "command": "gulp jasmine",
+    "tested": false,
+    "type": "unit"
+  },{
+    "name": "Mocha",
+    "command": "gulp mocha",
+    "tested": false,
+    "type": "unit"
+  },{
+    "name": "qUnit",
+    "command": "gulp qunit",
+    "tested": false,
+    "type": "unit"
+  },{
+    "name": "Jest",
+    "command": "gulp jest",
+    "tested": false,
+    "type": "unit"
+  },{
+    "name": "SinonJS",
+    "command": "gulp sinonjs",
+    "tested": false,
+    "type": "unit"
+  },{
+    "name": "YUI Test",
+    "command": "gulp yuitest",
+    "tested": false,
+    "type": "unit"
+  },{
+    "name": "CasperJS",
+    "command": "gulp casperjs",
+    "tested": false,
+    "type": "interface"
+  },{
+    "name": "Selenium",
+    "command": "gulp selenium",
+    "tested": false,
+    "type": "interface"
+  },{
+    "name": "DalekJS",
+    "command": "gulp dalekjs",
+    "tested": false,
+    "type": "interface"
+  },{
+    "name": "NightWatchJS",
+    "command": "gulp nightwatchjs",
+    "tested": false,
+    "type": "interface"
+  },{
+    "name": "Protractor",
+    "command": "gulp protractor",
+    "tested": false,
+    "type": "interface"
+  },{
+    "name": "Pyccuracy",
+    "command": "gulp pyccuracy",
+    "tested": false,
+    "type": "interface"
+  },{
+    "name": "Page Speed Insight",
+    "command": "gulp pagespeed",
+    "tested": false,
+    "type": "performance"
+  },{
+    "name": "YSlow",
+    "command": "gulp yslow",
+    "tested": false,
+    "type": "performance"
+  },{
+    "name": "Browsershots",
+    "command": "gulp browsershots",
+    "tested": false,
+    "type": "performance"
+  },{
+    "name": "Dev Tools Chrome Audits",
+    "command": "gulp audits",
+    "tested": false,
+    "type": "performance"
+  },{
+    "name": "Phantomas",
+    "command": "gulp phantomas",
+    "tested": false,
+    "type": "performance"
+  },{
+    "name": "PerfBudget",
+    "command": "gulp perfbudget",
+    "tested": false,
+    "type": "performance"
+  },{
+    "name": "BenchmarkJS",
+    "command": "gulp benchmarkjs",
+    "tested": false,
+    "type": "performance"
+  },{
+    "name": "DOM Monster!",
+    "command": "gulp dommonster",
+    "tested": false,
+    "type": "performance"
+  },{
+    "name": "Apache JMeter",
+    "command": "gulp jmeter",
+    "tested": false,
+    "type": "stress"
+  },{
+    "name": "Tsung",
+    "command": "gulp tsung",
+    "tested": false,
+    "type": "stress"
+  },{
+    "name": "Grinder",
+    "command": "gulp grinder",
+    "tested": false,
+    "type": "stress"
+  },{
+    "name": "Browserling",
+    "command": "gulp browserling",
+    "tested": false,
+    "type": "browser"
+  },{
+    "name": "Testling-ci",
+    "command": "gulp testlingci",
+    "tested": false,
+    "type": "browser"
+  },{
+    "name": "Wraith",
+    "command": "gulp wraith",
+    "tested": false,
+    "type": "reversion"
+  },{
+    "name": "JSTest",
+    "command": "gulp jstest",
+    "tested": false,
+    "type": "framework"
+  },{
+    "name": "BusterJS",
+    "command": "gulp busterjs",
+    "tested": false,
+    "type": "framework"
+  },{
+    "name": "Karma",
+    "command": "gulp karma",
+    "tested": false,
+    "type": "framework"
+  },{
+    "name": "Test'em",
+    "command": "gulp testem",
+    "tested": false,
+    "type": "framework"
+  },{
+    "name": "The Intern",
+    "command": "gulp intern",
+    "tested": false,
+    "type": "framework"
+  },{
+    "name": "Prova",
+    "command": "gulp prova",
+    "tested": false,
+    "type": "framework"
+  },{
+    "name": "Tape",
+    "command": "gulp tape",
+    "tested": false,
+    "type": "framework"
+  },{
+    "name": "Browserify",
+    "command": "gulp browserify",
+    "tested": false,
+    "type": "framework"
+  }
+]}
