@@ -11,17 +11,15 @@
   "devDependencies": {
     "eslint": "latest",
     "grunt": "latest",
-    "load-grunt-tasks": "latest",
-    "time-grunt": "latest",
     "grunt-casperjs": "latest",
     "grunt-concat": "latest",
+    "grunt-contrib-jasmine": "^1.0.0",
     "grunt-contrib-jshint": "latest",
     "grunt-contrib-qunit": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "latest",
     "grunt-dalek": "latest",
     "grunt-eslint": "latest",
-    "grunt-jasmine": "latest",
     "grunt-jest": "latest",
     "grunt-jscs": "latest",
     "grunt-jslint": "latest",
@@ -34,6 +32,8 @@
     "jest-cli": "^0.7.1",
     "jscs": "latest",
     "jshint": "latest",
-    "jslint": "latest"
+    "jslint": "latest",
+    "load-grunt-tasks": "latest",
+    "time-grunt": "latest"
   }
 }

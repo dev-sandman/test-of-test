@@ -27,6 +27,14 @@ module.exports = grunt => {
     },
     eslint: {
       target: ['./app/js/*.js','gruntfile.js','./tests/**/*.js']
+    },
+    jasmine: {
+      pivotal: {
+        src: ['./app/js/*.js'],
+        options: {
+          specs: ['./tests/unit/jasmine.spec.js']
+        }
+      }
     }
   });
 
@@ -92,18 +100,10 @@ module.exports = grunt => {
   grunt.registerTask('jshint-test','jshint');
   grunt.registerTask('jscs-test','jscs');
   grunt.registerTask('eslint-test','eslint');
-  //
+
   // //tasks: unit tests
-  // grunt.task('jasmine', function(){
-  //   return grunt
-  //     .src('tests/unit/jasmine.spec.js')
-  //     .pipe(jasmine());
-  // });
-  // grunt.task('mocha', function(){
-  //   return grunt
-  //     .src('tests/unit/mocha.spec.js')
-  //     .pipe(mocha({reporter : 'nyan'}));
-  // });
+  grunt.registerTask('jasmine-test','jasmine');
+  // grunt.task('mocha', ''
   // // grunt.task('qunit', function(){
   // //   return grunt
   // //     .src('tests/unit/qunit.spec.js')

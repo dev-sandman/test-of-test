@@ -3,7 +3,7 @@ describe("testPlanCtrl",function(){
   describe("By load page",function(){
 
     it("  -> verify whether data in model tools and localstorage is added.",function(){
-      expect(true).toContain(true);
+      expect(true).toBe(true);
     });
 
   });
