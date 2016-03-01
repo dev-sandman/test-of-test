@@ -1,0 +1,36 @@
+{
+  "name": "gulpfile",
+  "version": "1.0.0",
+  "description": "minification distribution unit-test listenning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-util": "latest",
+    "gulp-concat": "latest",
+    "gulp-rename": "latest",
+    "gulp-uglifycss": "latest",
+    "gulp-watch": "latest",
+    "jslint": "latest",
+    "jshint": "latest",
+    "jscs": "latest",
+    "eslint": "latest",
+    "gulp-jslint": "latest",
+    "gulp-jshint": "latest",
+    "gulp-jscs": "latest",
+    "gulp-eslint": "latest",
+    "gulp-jasmine": "latest",
+    "gulp-mocha": "latest",
+    "gulp-qunit": "latest",
+    "gulp-jest": "latest",
+    "gulp-casperjs": "latest",
+    "gulp-webdriver": "latest",
+    "gulp-dalek": "latest",
+    "gulp-nightwatch": "latest",
+    "gulp-protractor": "latest"
+  }
+}

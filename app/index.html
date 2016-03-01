@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="testApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="Keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>test-of-test | v0.1.0</title>
+    <link rel="icon" type href="images/favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="libraries/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libraries/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <header>
+
+    </header>
+    <nav>
+
+    </nav>
+    <section ng-controller="testPlanCtrl">
+      <h1>Hello, developer!</h1>
+      <h2>Time for the TEST!</h2>
+      <table class="table table-hover table-bordered">
+        <thead>
+          <title>Test Tools Table</title>
+          <tr>
+            <th>Tools</th>
+            <th>Command Code</th>
+            <th>Tested</th>
+          </tr>
+        </thead>
+        <tbody ng-repeat="t in tools | orderBy: 'type'">
+          <tr>
+            <td>{{ t.name }}</td>
+            <td><code>{{ t.command }}</code></td>
+            <td><input type="radio" name="tested" value="{{ t.tested }}" ng-click="enviaJSON()"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer>
+      Powered by Rádames D Sandman <a href="https://twitter.com/dev_sandman">@dev-sandman</a>
+    </footer>
+    <script src="libraries/angular/angular.min.js"></script>
+    <script scr="libraries/zepto/zepto.min.js"></script>
+    <script src="js/main.js" asyn defer></script>
+  </body>
+</html>

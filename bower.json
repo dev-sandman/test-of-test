@@ -1,0 +1,25 @@
+{
+  "name": "test-of-test",
+  "authors": [
+    "dev-sandman <radames.sandman@gmail.com>"
+  ],
+  "description": "For tests",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "test-of-test"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "repository": "none",
+  "private": true,
+  "dependencies": {
+    "angular": "latest",
+    "font-awesome": "latest",
+    "bootstrap": "latest",
+    "zepto": "latest"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.5.0"
+  }
+}

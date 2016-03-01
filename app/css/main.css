@@ -1,0 +1,33 @@
+/*BASE*/
+    /*Reset css*/
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      vertical-align: baseline;
+    }
+
+/*LAYOUT*/
+  header{
+    text-align: center;
+  }
+
+  section{
+    padding: 10px;
+    text-align: center;
+  }
+
+  footer{
+    text-align: center;
+    color: #fff;
+    background-color: #3abbb2;
+  }
+/*MODULES*/
+
+/*STATES*/
+
+/*THEMES*/
+
+/*UTILITIES*/
+
+/*SHAME*/
