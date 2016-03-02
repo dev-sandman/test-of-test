@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = grunt => {
+module.exports = function(grunt){
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
@@ -35,6 +35,23 @@ module.exports = grunt => {
           specs: ['./tests/unit/jasmine.spec.js']
         }
       }
+    },
+    mochaTest: {
+      test: {
+        options: {
+          reporter: 'spec',
+        },
+        src: ['./tests/unit/mocha.spec.js']
+      }
+    },
+    jest: {
+      options: {
+        coverage: true,
+        testPathPattern: /.*jest.spec.js/
+      }
+    },
+    qunit: {
+      all: ['./app/index.html']
     }
   });
 
@@ -82,11 +99,11 @@ module.exports = grunt => {
     'jscs-test',
     'eslint-test'
   ]);
-  // grunt.registerTask('unit-test',[
-  //   'jasmine',
-  //   'mocha',
-  //   'jest'
-  // ]);
+  grunt.registerTask('unit-test',[
+    'jasmine-test',
+    'mocha',
+    'jest'
+  ]);
   // grunt.registerTask('interface-test',[
   //   'dalekjs'
   // ]);
@@ -103,17 +120,9 @@ module.exports = grunt => {
 
   // //tasks: unit tests
   grunt.registerTask('jasmine-test','jasmine');
-  // grunt.task('mocha', ''
-  // // grunt.task('qunit', function(){
-  // //   return grunt
-  // //     .src('tests/unit/qunit.spec.js')
-  // //     .pipe(qunit());
-  // // });
-  // grunt.task('jest', function(){
-  //   return grunt
-  //     .src('tests/unit/jest.spec.js')
-  //     .pipe(jest({scriptPreprocessor: "app/js/*.js"}));
-  // });
+  grunt.registerTask('mocha-test','mochaTest');
+  grunt.registerTask('jest-test', 'jest');
+  grunt.registerTask('qunit-test', 'qunit');
   // // grunt.task('sinonjs', function(){
   // //   return grunt
   // //     .src('tests/unit/sinon.spec.js')

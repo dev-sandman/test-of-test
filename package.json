@@ -23,7 +23,7 @@
     "grunt-jest": "latest",
     "grunt-jscs": "latest",
     "grunt-jslint": "latest",
-    "grunt-mocha": "latest",
+    "grunt-mocha-test": "^0.12.7",
     "grunt-nightwatch": "latest",
     "grunt-protractor-runner": "latest",
     "grunt-rename": "latest",
@@ -34,6 +34,7 @@
     "jshint": "latest",
     "jslint": "latest",
     "load-grunt-tasks": "latest",
+    "mocha": "^2.4.5",
     "time-grunt": "latest"
   }
 }

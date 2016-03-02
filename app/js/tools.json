@@ -1,32 +1,32 @@
 {"tools":[
   {
     "name": "JSHint",
-    "command": "gulp jshint",
+    "command": "grunt jshint-test",
     "tested": false,
     "type": "linter"
   },{
     "name": "JSLint",
-    "command": "gulp jslint",
+    "command": "grunt jslint-test",
     "tested": false,
     "type": "linter"
   },{
     "name": "JSCS",
-    "command": "gulp jscs",
+    "command": "grunt jscs-test",
     "tested": false,
     "type": "linter"
   },{
     "name": "EsLint",
-    "command": "gulp eslint",
+    "command": "grunt eslint-test",
     "tested": false,
     "type": "linter"
   },{
     "name": "Jasmine",
-    "command": "gulp jasmine",
+    "command": "grunt jasmine-test",
     "tested": false,
     "type": "unit"
   },{
     "name": "Mocha",
-    "command": "gulp mocha",
+    "command": "grunt mocha-test",
     "tested": false,
     "type": "unit"
   },{
