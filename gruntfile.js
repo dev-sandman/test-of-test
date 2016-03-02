@@ -52,7 +52,41 @@ module.exports = function(grunt){
     },
     qunit: {
       all: ['./app/index.html']
+    },
+
+    phantomas: {
+      gruntSite : {
+        options : {
+          indexPath : './phantomas/',
+          options   : {},
+          url       : 'http://localhost:8000/',
+          buildUi   : true
+        }
+      }
+    },
+    pagespeed: {
+      options: {
+        nokey: true,
+        url: "https://developers.google.com"
+      },
+      prod: {
+        options: {
+          url: "https://developers.google.com/speed/docs/insights/v1/getting_started",
+          locale: "en_GB",
+          strategy: "desktop",
+          threshold: 80
+        }
+      },
+      paths: {
+        options: {
+          paths: ["/speed/docs/insights/v1/getting_started", "/speed/docs/about"],
+          locale: "en_GB",
+          strategy: "desktop",
+          threshold: 80
+        }
+      }
     }
+
   });
 
 
@@ -108,7 +142,10 @@ module.exports = function(grunt){
   //   'dalekjs'
   // ]);
   // grunt.task('browser-test', []);
-  // grunt.task('performance-test', []);
+  grunt.registerTask('performance-test',[
+    'pagespeed-test',
+    'phantomas-test'
+  ]);
   // grunt.task('stress-test', []);
   // grunt.task('reversion-test', []);
 
@@ -133,8 +170,8 @@ module.exports = function(grunt){
   // //     .src('tests/unit/yui.spec.js')
   // //     .pipe(jasmine());
   // // });
-  //
-  // //tasks: interface tests
+
+  //tasks: interface tests
   // // grunt.task('casperjs', function(){
   // //   return grunt
   // //     .src('tests/interface/casperjs.spec.js')
@@ -171,17 +208,11 @@ module.exports = function(grunt){
   // //tasks: browser tests
   // grunt.task('browserling', function(){});
   // grunt.task('testling-ci', function(){});
-  //
-  // //tasks: performance tests
-  // grunt.task('pagespeed', function(){});
-  // grunt.task('yslow', function(){});
-  // grunt.task('browsershots', function(){});
-  // grunt.task('audits', function(){});
-  // grunt.task('phantomas', function(){});
-  // grunt.task('perfbudget', function(){});
-  // grunt.task('benchmarkjs', function(){});
-  // grunt.task('dommonster', function(){});
-  //
+
+  //tasks: performance tests
+  grunt.registerTask('pagespeed-test','pagespeed');
+  grunt.registerTask('phantomas-test','phantomas');
+
   // //tasks: stress tests
   // grunt.task('jmeter', function(){});
   // grunt.task('tsung', function(){});

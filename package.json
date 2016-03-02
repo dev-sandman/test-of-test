@@ -25,6 +25,8 @@
     "grunt-jslint": "latest",
     "grunt-mocha-test": "^0.12.7",
     "grunt-nightwatch": "latest",
+    "grunt-pagespeed": "^2.0.0",
+    "grunt-phantomas": "^0.13.0",
     "grunt-protractor-runner": "latest",
     "grunt-rename": "latest",
     "grunt-webdriver": "latest",
